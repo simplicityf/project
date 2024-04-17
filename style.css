@@ -1,0 +1,121 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1ebeb;
+    padding: 5px;
+    margin: 15px;
+    font-size: 17px;
+    font-family:Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: yellow;
+    }
+}
+
+@media screen and (min-width:772px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+@media screen and (min-width:772px){
+    h1 {
+        font-size: 3em;
+    }
+}
+h2{
+    text-align:center;
+  }
+
+li{
+    margin-top: 20px;
+}
+
+img{
+    border: 5px solid blue;
+    border-radius: 35px;
+    width: 100%;
+  }
+
+  @media screen and (min-width:772px) {
+    img {
+        border-radius: 50%;
+    }
+    img:nth-last-child(9n) {
+        grid-column: 1/span 2;
+    }
+  }
+
+  @media screen and (min-width:992px) {
+    img {
+        border-radius: 0%; }
+          }
+
+  @media (prefers-color-scheme: dark) {
+  img {  border: 5px solid black;
+  }
+  }
+
+.label{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 95%;
+    row-gap: 10px;
+}
+@media screen and (min-width:772px) {
+    .grid {
+        grid-template-columns: 45% 45%;
+    }
+    .grid :nth-last-child(1) {
+        grid-column: 1 / span 2;
+    }
+}
+
+   a:hover {
+    background-color: blueviolet;
+    color: white;
+  }
+
+@media screen and (min-width:992px) {
+     .grid :nth-child(3n) {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media screen and (prefers-reduced-motion: no-prefrence) { }
+
+
+figcaption {
+    color: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+    figcaption {
+        color: yellow;
+    }
+}
+
+footer a {
+    color:blue;
+}
+
+@media (prefers-color-scheme: dark) {
+    footer a {
+        color: yellow;
+    }
+}
