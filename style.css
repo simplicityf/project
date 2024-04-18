@@ -119,3 +119,12 @@ footer a {
         color: yellow;
     }
 }
+
+.divs {
+    border: 1px solid green;
+    background-color: blueviolet;
+    color: beige;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
